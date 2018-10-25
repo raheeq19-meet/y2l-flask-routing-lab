@@ -1,0 +1,23 @@
+<html>
+    <head>
+    </head>
+    <style>
+        body {background-color: powderblue;}
+        h1 {
+            color: blue;
+            font-family: verdana;
+            font-size: 300%;
+            text-align:center;
+        }
+
+    </style>
+    <body>
+        <h1>SHOP</h1>
+        <a href={{ url_for('home_page') }}><button type="button">Home</button></a>
+        <br><br>
+        {% for item in items %}
+        <li> {{item}} </li>
+        {% endfor %}
+
+    </body>
+</html>
